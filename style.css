@@ -1,0 +1,164 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/AnonymousPro-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Anonymous Pro";
+  src: url("/fonts/AnonymousPro-Bold.ttf");
+  font-weight: 700;
+}
+
+/* Базовые стили */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+
+  color: #000000;
+  background-color: #f1f1f1;
+
+  font-family: "Anonymous Pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+/* Контейнеры */
+.container {
+  width: 100%;
+  max-width: 1160px;
+
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Стили текста */
+h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* Стили шапки */
+.header {
+  width: 100%;
+  padding: 20px 0;
+
+  background-color: #ffffff;
+  border-bottom: 1px #a1a6b4 solid;
+
+  /* Продвинутые стили */
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  z-index: 999;
+}
+.header__logo {
+  width: 212px;
+
+  /* Продвинутые стили */
+  width: 100%;
+  max-width: 212px;
+}
+
+/* Стили меню соц. сетей */
+.social {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+
+  list-style: none;
+}
+.social__link {
+  color: black;
+  font-weight: 700;
+
+  text-decoration: none;
+}
+.social__link_white {
+  color: #ffffff;
+}
+
+/* Стили контента */
+.main {
+  margin: 30px 0;
+}
+.main__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  gap: 25px;
+}
+
+/* Стили карточек кроссовок */
+.card {
+  width: 100%;
+  max-width: 370px;
+
+  border-radius: 15px;
+  background-color: #ffffff;
+
+  overflow: hidden;
+}
+.card__image {
+  width: 100%;
+}
+.card__text {
+  padding: 20px 25px;
+}
+.card__text > h2 {
+  margin-bottom: 10px;
+}
+
+/* Стили подвала */
+.footer {
+  width: 100%;
+  padding: 30px 0;
+
+  background-color: #121723;
+}
+.footer__logo {
+  width: 300px;
+
+  /* Продвинутые стили */
+  width: 100%;
+  max-width: 300px;
+}
+.footer__line {
+  height: 1px;
+  margin: 20px 0;
+
+  border: none;
+  background-color: #a1a6b4;
+
+  /* Продвинутые стили */
+  background-color: rgba(230, 232, 236, 0.4);
+}
+.footer__text {
+  color: #a1a6b4;
+  font-weight: 700;
+  font-size: 16px;
+
+  text-align: center;
+  text-transform: uppercase;
+}
